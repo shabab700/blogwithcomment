@@ -1,0 +1,38 @@
+<%#
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"  
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+<%# %>
+<div class="banner">
+
+<header>
+    <img class="logo" src="logo.png" alt="">
+       <nav>
+
+        <ul class="nav-area">
+          <li><a><%= link_to "HOME",root_path%></a></li>
+          <li><a><%= link_to "Create New Post", posts_path %></a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">contact</a></li>
+</ul>
+</nav> 
+        <ul>
+        <%if  user_signed_in? %>
+           <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"btn-area btn btn-danger"%>
+        <%else%> 
+          <%= link_to "Sign up", new_user_registration_path, class:"btn-area btn btn-primary"%>
+          <%= link_to "Sign in", new_user_session_path, class:"btn-area btn btn-primary"%>
+          <%end%>
+        </ul>
+    </header>
+
+</div>
+
+ 
+
+  
+
+
