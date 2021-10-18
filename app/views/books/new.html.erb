@@ -1,0 +1,19 @@
+<%= form_with(model: @book, local: true)do |form| %>
+
+ <div class="container">
+  <div class="col-md-4"> 
+   <div class="field">
+     <%= form.label :title %><br>
+     <%= form.text_field :title %>
+   </div>
+ 
+   <p>
+     <%= form.label :description %><br>
+     <%= form.text_area :description %>
+    <%= form.submit %>
+   </p>
+  <%= link_to 'Back', books_path %>
+ 
+  <% end %>
+ </div>
+</div>

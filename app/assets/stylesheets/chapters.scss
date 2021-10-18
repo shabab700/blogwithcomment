@@ -1,0 +1,53 @@
+.chapter{
+  text-align: center;
+}
+
+
+.text-center{
+  font-weight: 400;
+  list-style: none;
+  color: #333;
+  text-decoration: none;
+  
+}
+.text{
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+a:hover{ 
+ text-decoration: none;
+
+}
+li:hover{
+  box-shadow: 5px 5px 5px rgba(0, 255, 0, 0.1);
+
+}
+.title{
+height:120px;
+background-color: #1e90ff;
+
+} 
+.c-title{
+  text-align: center;
+  color:white;
+  padding-top: 35px;
+  padding-right: 100px;
+  text-transform: uppercase;
+
+}
+.discription{
+height:100%;
+width:100%;
+margin-top: 6rem;
+}
+.p-text{
+  padding-top: 6rem;
+  padding-left: 5rem;
+  padding-right: 15rem;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  
+}

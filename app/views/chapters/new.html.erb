@@ -1,0 +1,18 @@
+<div class="container">
+ <%= form_with model: [@book, @book.chapters.build] do |form| %>
+
+  <div class="field form-group">
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  <div>
+ 
+  <div class="field form-group">
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </div>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+ <% end %>
+</div>
