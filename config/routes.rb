@@ -3,7 +3,14 @@ Rails.application.routes.draw do
    resources :posts do 
   resources :comments
  end
-  root 'welcome#index'
+ resources :books do
+  resources :chapters 
+  
+end   
+resources :publishers
+  root 'posts#index'
+  get 'welcome/index'
+  get 'welcome/contact'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 
