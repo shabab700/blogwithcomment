@@ -5,7 +5,7 @@
         <h3  class="chapter">Chapters</h3>
       </div>
 
-         <% @book.chapters.each do  |chapter|%>
+      <% @book.chapters.each do  |chapter|%>
       <ul>
        <%= link_to book_chapter_path(@book, chapter),class:'text' do %>
         <hr>
@@ -33,9 +33,19 @@
      <h1 class="c-title "><%=@book.title%></h1>
     </div>
 
+
     <div class="description">
      <p class="p-text"> <%=@book.description%></p>
     </div>
+
+    <strong >Publishers of this book </strong>
+    <% @book.book_publishers.each do |book_publisher| %>
+    <li>
+     <%= book_publisher.publisher.name %>
+    </li>
+    <% end%>
+    
+    
  </div>
 </div>
   <%#=link_to 'show', book_chapter_path(@book, chapter),class:'btn btn-primary'%>

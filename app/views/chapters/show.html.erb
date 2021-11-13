@@ -6,7 +6,7 @@
       </div>
       <% @book.chapters.each do  |chapter|%>
       <ul>
-       <%= link_to book_chapter_path(@book, chapter),class:'text' do %>
+       <%= link_to book_chapter_path(@book,chapter),class:'text' do %>
        <hr>
        <li class="text-center"> <%= chapter.title%></li>
        <% end %>

@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   resources :comments
  end
  resources :books do
-  resources :chapters
+  resources :chapters 
+  
 end   
-
+resources :publishers
   root 'posts#index'
   get 'welcome/index'
   get 'welcome/contact'

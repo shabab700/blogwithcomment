@@ -1,8 +1,8 @@
-
+<div class="container">
 <%- model_class = Post -%>
 
 <div >
-    <h1>POSTS</h1>
+    <h1 class="text-center">POSTS</h1>
        <div class="btn btn-primary float-right ml-2">
          <%= link_to "NEW POST",new_post_path,class:'btn btn-primary' %>
       </div>
@@ -10,7 +10,7 @@
 
   
  
-<div class="container">
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -22,7 +22,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @posts.each do |post| %>
+    <% @post.each do |post| %>
       <tr>
         <td><%= link_to post.id, post_path(post) %></td>
         <td><%= post.title %></td>
